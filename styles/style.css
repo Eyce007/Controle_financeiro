@@ -52,7 +52,7 @@ header{
 .total{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-items: center;
     width: 100%;
     background: rgb(179, 177, 177);
@@ -66,6 +66,11 @@ header{
 .despense-informations > h3{
     color: red;
 }
+.income-informations:hover,
+.despense-informations:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 .List{
     display: flex;
@@ -78,6 +83,7 @@ header{
 }
 
 .list-item{
+    cursor: pointer;
     background: rgb(179, 177, 177);
     margin-top: 0.3em;
     border-radius: 3px;
@@ -104,15 +110,28 @@ header{
 }
 
 
-.Inserir-despesa-nome, .Inserir-despesa-valor{
+.Inserir-despesa-nome, 
+.Inserir-despesa-valor{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     padding: 0.6em;
     background: rgb(179, 177, 177);
     margin-top: 0.3em;
+    outline: none;
 }
 
-#insert-name, #insert-valor{
+#insert-name, 
+#insert-valor{
     border-radius: 3px;
     
+}
+
+.list-item:hover{
+    opacity: 0.8;
+}
+
+.Inserir-despesa-nome:hover, 
+.Inserir-despesa-valor:hover{
+    opacity: 0.9;
 }
