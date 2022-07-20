@@ -1,0 +1,5 @@
+const FinanceName = document.querySelector('#Inserir-nome')
+const FinanceValor = document.querySelector('#Inserir-valor')
+const ValorTotalInfo = document.querySelector('.Total')
+const IncomeInfo = document.querySelector('.Income')
+const dispenseInfo = document.querySelector('.despesas')
